@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import { UserButton } from "@clerk/nextjs";
 
 const LandingPage = () => {
   return (
@@ -13,6 +14,7 @@ const LandingPage = () => {
         <Link href="/sign-up">
           <Button>Register</Button>
         </Link>
+        <UserButton />
       </div>
     </div>
   );
